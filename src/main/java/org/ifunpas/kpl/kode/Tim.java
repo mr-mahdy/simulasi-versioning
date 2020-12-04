@@ -14,4 +14,15 @@ public class Tim {
 	public Tim(String nama) {
 		this.nama = nama;
 	}
+	
+	public boolean tambahPemainInti(Pemain pemain) {
+		if(pemainInti.size() < 11) {
+			pemainInti.add(pemain);
+			System.out.println(pemain.getNama() + " berhasil ditambahkan sebagai pemain inti.");
+			return true;
+		} else {
+			System.out.println(pemain.getNama() + " tidak berhasil ditambahkan sebagai pemain inti.");
+			return false;
+		}
+	}
 }
